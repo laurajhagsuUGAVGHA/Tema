@@ -1,18 +1,26 @@
 @font-face {
     font-family: 'Sofia Sans' ;
-    src: url(Temas.html);
+    src: url(sofiasans/ttf/SofiaSans-Italic.ttf);
 }
 
 body{
-    background-color: white;
-    color: black;
-    width: 200px;
-    height: 200px;
+    background-color: rgb(252, 252, 252);
+    color: rgb(0, 0, 0);
+    font-family: 'Sofia Sans';
+    height: 100px;
+   
+}
+
+header{
+    background-color: #910da7;
+    width: 1540px;
+    height: 600px;
+
 }
 
 .modo-escuro{
-    background-color: black;
-    color: white;
+    background-color: rgb(215, 161, 226);
+    color: rgb(246, 246, 246);
 }
 
 .cores{
@@ -21,11 +29,12 @@ body{
     
 }
 .branco{
-    color: black;
+   
     font-family: 'Sofia Sans';
 }
 .verde{
     color: #74e313;
+    font-family: 'Sofia Sans';
 }
 
 .servicos{
@@ -34,12 +43,215 @@ body{
     margin-top: -70px;
 }
 .blog{
-    margin-left: 40px;
+    
+    margin-left: 30px;
     text-align: center;
     justify-content: center;
 }
 
-.trocar-tema{
+#trocar-tema{
     background-color: white;
-    width: 100px;
+    width: 20px;
+    margin-left: 10px;
 }
+/* PARTE2 */
+.imagem-container{
+
+    background-color: #52ba00;
+    border-radius: 25px; 
+    width: 200px; 
+    height: 300px;
+    margin: 20px auto; 
+    padding: 20px; 
+    margin-left: 200px;
+  margin-top: 50px;
+ 
+}
+.imagem{
+    width: 250px;
+    height: 350px;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+
+.texto{
+    font-family: 'Sofia Sans';
+    margin-left: 400px;
+    margin-top: -180px;
+    text-align: center;
+}
+
+.parte2{
+    color: #EA4710;
+    display: flex;
+    font-family: 'Sofia Sans';
+    font-size: 30px;
+    margin-left: 100px;
+   margin-top: 50px;
+}
+
+.containerdois {
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 420px;
+}
+
+.containerdois h2 {
+    padding: 5px;
+}
+
+.item img {
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+/* PARTE2 */
+
+/*Parte 3*/
+.parte3{
+    background-color: #910da7;
+    width: 1540px;
+    height: 700px;
+}
+
+.camera{
+color: #70FF00;
+    display: flex;
+    font-family: 'Sofia Sans';
+    font-size: 30px;
+    margin-left: 100px;
+   margin-top: 50px;
+}
+
+.foto{
+    width: 100px;
+    height: 5px;
+    text-align: center;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+/*Parte4*/
+
+.contato{
+    color: #EA4710;
+    display: flex;
+    font-family: 'Sofia Sans';
+    font-size: 30px;
+    margin-left: 100px;
+   margin-top: 50px;   
+}
+
+.nome{
+    color: black;
+    margin-top: 10px;
+}
+.form-contato {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+
+form {
+    display: grid;
+}
+.bolsa{
+    width: 300px;
+    height: 450px;
+}
+input{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+}
+textarea{
+    background-color: #ffffff;
+    border: none;
+}
+
+button{
+    background-color: #910da7;
+    margin-top: 30px;
+    border-radius: 30px;
+    width: 100px;
+    margin-left: 80px;
+}
+.fim{
+    display: flex;
+    margin-left: 800px;
+    margin-top: -90px;
+}
+
+.container{
+    background-color: #910da7;
+    width: 1540px;
+margin-top: 150px;}
+
+
+
+/* ELEMENTO */
+.switch {
+    margin-top: 20px;
+    margin-left: 20px;
+    --button-width: 3.5em;
+    --button-height: 2em;
+    --toggle-diameter: 1.5em;
+    --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset: 10px;
+    --toggle-wider: 3em;
+    --color-grey: #cccccc;
+    --color-green: #270725;
+   }
+   
+   .slider {
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-grey);
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    transition: 0.3s all ease-in-out;
+   }
+   
+   .slider::after {
+    content: "";
+    display: inline-block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #fff;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+   }
+   
+   .switch input[type="checkbox"]:checked + .slider {
+    background-color: var(--color-green);
+   }
+   
+   .switch input[type="checkbox"]:checked + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+   }
+   
+   .switch input[type="checkbox"] {
+    display: none;
+   }
+   
+   .switch input[type="checkbox"]:active + .slider::after {
+    width: var(--toggle-wider);
+   }
+   
+   .switch input[type="checkbox"]:checked:active + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+   }
+   /* ELEMENTO */
