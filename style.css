@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Sofia Sans' ;
+    src: url(Temas.html);
+}
+
+body{
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 200px;
+}
+
+.modo-escuro{
+    background-color: black;
+    color: white;
+}
+
+.cores{
+    display: flex;
+    margin-left: 100px;
+    
+}
+.branco{
+    color: black;
+    font-family: 'Sofia Sans';
+}
+.verde{
+    color: #74e313;
+}
+
+.servicos{
+    display: flex;
+    margin-left: 800px;
+    margin-top: -70px;
+}
+.blog{
+    margin-left: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.trocar-tema{
+    background-color: white;
+    width: 100px;
+}
